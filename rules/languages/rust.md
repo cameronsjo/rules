@@ -1,5 +1,5 @@
 ---
-globs: ["**/*.rs"]
+globs: ["**/*.rs", "**/Cargo.toml", "**/Cargo.lock"]
 alwaysApply: false
 ---
 

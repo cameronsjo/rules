@@ -1,5 +1,5 @@
 ---
-globs: ["**/*.java"]
+globs: ["**/*.java", "**/pom.xml", "**/build.gradle", "**/build.gradle.kts"]
 alwaysApply: false
 ---
 
