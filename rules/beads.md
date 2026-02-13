@@ -7,11 +7,11 @@ paths:
 
 ## Issue Classification
 
-When creating beads issues, **MUST** immediately label each issue as either `plan-worthy` or `just-do-it`.
+When creating beads issues, **MUST** immediately label each issue as either `needs-design` or `ready-to-implement`.
 
-### `plan-worthy` — Requires design before coding
+### `needs-design` — Requires design before coding
 
-Label an issue `plan-worthy` when ANY of these apply:
+Label an issue `needs-design` when ANY of these apply:
 
 - Multiple valid implementation approaches exist
 - Architectural decisions needed (patterns, data flow, component structure)
@@ -21,9 +21,9 @@ Label an issue `plan-worthy` when ANY of these apply:
 - Touches interfaces, protocols, or public APIs
 - Requires choosing between competing patterns (e.g., `asyncio.wait` vs wrapper pattern)
 
-### `just-do-it` — Mechanical, no ambiguity
+### `ready-to-implement` — Mechanical, no ambiguity
 
-Label an issue `just-do-it` when ALL of these apply:
+Label an issue `ready-to-implement` when ALL of these apply:
 
 - Single clear implementation path
 - Scope is contained (1-2 files, localized change)
@@ -35,7 +35,7 @@ Label an issue `just-do-it` when ALL of these apply:
 ```bash
 # Create and immediately label
 bd create --title="Fix X" --type=bug --priority=P2
-bd label add <id> plan-worthy  # or just-do-it
+bd label add <id> needs-design  # or ready-to-implement
 ```
 
 When creating issues in bulk, label all issues in the same pass — do not defer labeling to a separate step.
