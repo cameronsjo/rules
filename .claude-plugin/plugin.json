@@ -1,7 +1,7 @@
 {
   "name": "rules",
   "description": "Language and domain rules for Claude Code: Python, TypeScript, JavaScript, Go, Rust, Java, C#, and security standards",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": {
     "name": "cameronsjo"
   },
